@@ -57,23 +57,15 @@ cd CoursePlatform
 2. Instalar dependencias:
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
 
-3. Crear archivo `.env` con tus datos de conexión:
-
-```env
-DB_HOST=localhost
-DB_PORT=5432
-DB_USER=tu_usuario
-DB_PASSWORD=tu_contraseña
-DB_NAME=nombre_de_tu_base_de_datos
-```
+3. Abrir la subcarpeta lib y en el archivo database.ts verificar que la info de la base de datos en workbench este correcta (Usuario, host, contraseña etc..)
 
 4. Iniciar servidor:
 
 ```bash
-npm start
+npm run dev
 ```
 
 Accede a la aplicación en `http://localhost:3000`.
