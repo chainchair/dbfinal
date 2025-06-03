@@ -1,11 +1,66 @@
-# dbfinal
+# Materia: S2561-0701 Base de datos
+#
+# Estudiante(s): 
+# Leidy Gallo Vargas igallov@eafit.edu.co
+# Samuel David Serpa sdserpaz@eafit.edu.co
+# Julian Lara Aristizábal jlaraa@eafit.edu.co
+#
+# Profesor: EDWIN NELSON MONTOYA MUNERA, emontoya@eafit.edu.co
+#
+# Course Platform entrega 3
 
-Proyecto final del curso de Bases de Datos. Este repositorio contiene:
+# Descripción del Proyecto:
+Este proyecto consiste en el diseño e implementación de una base de datos para un Sistema de Gestión de Cursos en Línea, como parte del proyecto final del curso SI2003 - Sistemas de Gestión de Datos de la Universidad EAFIT. El sistema está orientado a apoyar la plataforma NODO, una iniciativa institucional para ofrecer cursos virtuales en diversas áreas del conocimiento.
 
-- Scripts SQL para crear y poblar la base de datos.
-- Una aplicación web desarrollada con Node.js.
-- Una interfaz de línea de comandos (CLI) en Python para interactuar con la base de datos.
+## El proyecto incluye:
 
+- **Modelado de datos** mediante un diagrama Entidad-Relación y su respectiva normalización.
+- **Implementación física en MySQL** utilizando sentencias DDL y DML.
+- **Desarrollo de consultas SQL** para la extracción de información clave desde la base de datos.
+- **Creación de una aplicación**:
+- La solución se puede **ejecutar desde consola en Python**
+
+## Funcionalidades de la Aplicación
+1. **Login/Logout**  
+   Autenticar al usuario con su nombre de usuario y contraseña, los cuales estarán registrados en la tabla `Usuarios`.
+
+2. **Opciones para un Administrador**  
+   - Matricular usuarios a un curso.  
+   - Asignar un profesor a un curso.  
+   - Acceso a todas las opciones disponibles para profesores y alumnos.
+
+3. **Opciones para Profesor y Alumno**  
+   - Listar sus cursos.  
+   - Ingresar a un curso y poder realizar:
+     - Listar alumnos.  
+     - Listar materiales.  
+     - Foros (enviar mensajes, responder mensajes).  
+     - Tareas.  
+     - Subir materiales (solo profesor, se simulan con URLs ficticias).  
+     - Crear foro (solo profesor).  
+     - Salir del curso y regresar a la lista de cursos.
+
+4. **Reportes (solo Administradores)**  
+   - Listar todos los cursos por algún mecanismo de filtrado:
+     - Código del curso.
+     - Código del profesor.
+     - Rango de fechas.
+     - Otro criterio relevante.
+   - Ver la información de un curso: detalles del curso, su profesor y alumnos (excluyendo materiales, tareas y foros).
+   - Listar usuarios por algún mecanismo de filtrado:
+     - Todos.
+     - Por rol.
+     - Por ID, etc.
+
+## Descripción del Ambiente de Desarrollo y Técnico
+
+El proyecto fue desarrollado utilizando el siguiente entorno técnico:
+- **Lenguaje principal:** Python 3.x
+- **Base de datos:** MySQL
+- **Cliente MySQL:** MySQL Workbench
+- **Lógica de aplicación:** Python, orientado a consola
+- **Gestión de versiones y colaboración:** Git y GitHub  
+  [Repositorio del proyecto](https://github.com/chainchair/dbfinal)
 ## 📁 Contenido del Repositorio
 
 - **database/**: Contiene los scripts SQL para la creación y población de la base de datos.
@@ -110,3 +165,8 @@ dbfinal/
 ├── .gitignore
 └── README.md              # Este archivo
 ```
+
+
+### Referencias:
+- https://www.w3schools.com/python/
+- https://nodejs.org/api/all.html
