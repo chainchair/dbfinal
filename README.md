@@ -89,14 +89,24 @@ python PlataformaCursos.py
 ```
 dbfinal/
 ├── CoursePlatform/        # Aplicación web en Node.js
+│   ├── app/
+│   ├── components/
+│   ├── hooks/
+│   ├── lib/
 │   ├── public/
-│   ├── routes/
-│   ├── views/
-│   ├── app.js
-│   └── package.json
+│   ├── styles/
+│   ├── components.json
+│   ├── next.config.mjs
+│   ├── package.json
+│   ├── pnpm-lock.yaml
+│   ├── postcss.config.mjs
+│   ├── tailwind.config.ts
+│   └── tsconfig.json
+|
 ├── database/              # Scripts SQL
 │   ├── crear_tablas.sql
 │   └── poblar_tablas.sql
 ├── PlataformaCursos.py    # Interfaz CLI en Python
+├── .gitignore
 └── README.md              # Este archivo
 ```
